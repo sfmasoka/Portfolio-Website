@@ -3,131 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sithembiso Masoka</title>
+  <title>Sithembiso Masoka - Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- START NAV -->
-  <nav id="navbar" class="nav">
-      <ul class="nav-list">
-        <li>
-          <a href="#welcome-section">About Me</a>
-        </li>
-        <li>
-          <a href="#resume">Resume</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Sithembiso</div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-    <!-- END NAV -->
-    
-    <!-- START WELCOME SECTION -->
+    </div>
+  </nav>
 
-    <section id="welcome-section" class="welcome-section">
-      <h1>Hey I am Sithembiso</h1>
-      <p>A Web Developer</p>
-    </section>
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Sithembiso Masoka</span></h1>
+      <p>Web Developer | UI/UX Enthusiast | Problem Solver</p>
+      <a href="#projects" class="btn primary">View My Work</a>
+    </div>
+  </section>
 
-    <!-- END WELCOME SECTION -->
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a passionate web developer who loves creating beautiful and functional websites. My focus is on building seamless user experiences with clean and efficient code. When I’m not coding, I enjoy learning new technologies and solving complex problems.</p>
+    </div>
+  </section>
 
-    <!-- START PROJECTS SECTION -->
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <i class="fas fa-code"></i>
+          <p>C#</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-java"></i>
+          <p>Java</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-git-alt"></i>
+          <p>Git & GitHub</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects" class="projects-section">
-      <h2 class="projects-section-header">These are some of my projects</h2>
-
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
       <div class="projects-grid">
-        <a
-          href="https://sfmasoka.github.io/rock_paper_scissors/"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="images/rock_paper_scissors.png"
-            alt="project"
-            width="375px";
-            height="485px";
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Classic Rock Paper Scissors Game
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://sfmasoka.github.io/calculator-app/"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="images/calculator-app.png"
-            alt="project"
-            width="375px";
-            height="485px";
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Simple Calculator App
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-        <a
-          href="https://sfmasoka.github.io/Pine-City-Zoo/animals.html"
-          target="_blank"
-          class="project project-tile"
-        >
-          <img
-            class="project-image"
-            src="images/zoo.png"
-            alt="project"
-            width="375px";
-            height="485px";
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Pine City Zoo Website
-            <span class="code">&#47;&gt;</span>
-          </p>
-        </a>
-
-      
-    </section>
-
-    <!-- END PROJECTS SECTION -->
-    
-    <!-- START CONTACT SECTION -->
-
-    <section id="contact" class="contact-section">
-      <div class="contact-section-header">
-        <h2>Let's work together...</h2>
+        <div class="project-card">
+          <img src="images/rock_paper_scissors.png" alt="Rock Paper Scissors">
+          <div class="project-info">
+            <h3>Rock Paper Scissors Game</h3>
+            <a href="https://sfmasoka.github.io/rock_paper_scissors/" target="_blank" class="btn secondary">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/calculator-app.png" alt="Calculator App">
+          <div class="project-info">
+            <h3>Calculator App</h3>
+            <a href="https://sfmasoka.github.io/calculator-app/" target="_blank" class="btn secondary">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/zoo.png" alt="Pine City Zoo">
+          <div class="project-info">
+            <h3>Pine City Zoo</h3>
+            <a href="https://sfmasoka.github.io/Pine-City-Zoo/animals.html" target="_blank" class="btn secondary">View Project</a>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
       <div class="contact-links">
-        
-        <a
-          id="profile-link"
-          href="https://github.com/sfmasoka/"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a href="fsmasoka@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
-        >
-        <a href="tel:074 2858831" class="btn contact-details"
-          ><i class="fas fa-mobile-alt"></i> Call me</a
-        >
+        <a href="mailto:fsmasoka@gmail.com" class="btn contact-btn"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://github.com/sfmasoka" target="_blank" class="btn contact-btn"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/sithembiso-masoka/" target="_blank" class="btn contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- END CONTACT SECTION -->
+  <footer>
+    <p>© 2025 Sithembiso Masoka. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
